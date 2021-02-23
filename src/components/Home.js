@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 // import AudioPlayer from 'react-h5-audio-player';
 // import 'react-h5-audio-player/lib/styles.css';
 import Tabletop from "tabletop";
+import {withRouter} from "./Modal"
 
 import './sheet.css'
 
@@ -43,7 +44,15 @@ function SeetsData() {
                       <code>audio</code> element.
                 </audio>
                 <p> {el.Year} </p>
-                <p> Rating: {el.Rating}</p>
+                {/* <Link
+  to={{
+    pathname: '/modal/1',
+    state: { modal: true }
+  }}
+>
+  Open Modal
+</Link> */}
+                {/* <p> Rating: {el.Rating}</p> */}
               </div>
             ))}
           </div>
